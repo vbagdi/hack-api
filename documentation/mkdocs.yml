@@ -1,0 +1,64 @@
+site_name: HackIllinois API Documentation
+site_author: HackIllinois Systems Staff
+
+repo_url: https://github.com/HackIllinois/api/
+# repo_name: GitHub
+
+
+nav:
+- Home: 'index.md'
+- About:
+    - 'License': 'about/License.md'
+- Getting Started:
+    - 'Developer Guide': 'getting-started/developer-guide.md'
+    - 'Deployment Guide': 'getting-started/deployment-guide.md'
+- Reference:
+    - Introduction: 'reference/introduction.md'
+    - Services:
+      - 'Authorization': 'reference/services/Authorization.md'
+      - 'Check-In': 'reference/services/Check-In.md'
+      - 'Decision': 'reference/services/Decision.md'
+      - 'Event': 'reference/services/Event.md'
+      - 'Mail': 'reference/services/Mail.md'
+      - 'Notifications': 'reference/services/Notifications.md'
+      - 'Profile': 'reference/services/Profile.md'
+      - 'Project': 'reference/services/Project.md'
+      - 'RSVP': 'reference/services/RSVP.md'
+      - 'Registration': 'reference/services/Registration.md'
+      - 'Statistics': 'reference/services/Statistics.md'
+      - 'Upload': 'reference/services/Upload.md'
+      - 'User': 'reference/services/User.md'
+    - Gateway:
+      - 'Middleware': 'reference/gateway/middleware.md'
+      - 'Routes': 'reference/gateway/routes.md'
+    - For API Writers:
+      - 'Documentation System': 'reference/api-writers/documentation-system.md'
+
+theme:
+  name: material
+  logo: https://avatars3.githubusercontent.com/u/5751098?s=200&v=4
+  favicon: https://www.hackillinois.org/favicon.ico
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
